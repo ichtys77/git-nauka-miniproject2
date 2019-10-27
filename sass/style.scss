@@ -81,9 +81,21 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
-
+/*
+.splash::after {
+  position: absolute;
+  content: '';
+  background: $color-text;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+*/
 .navigation {
-  padding: 20px 0; 
+  padding: 20px 0;
   a {
       text-decoration: none;
       color: $color-light;
@@ -95,7 +107,6 @@ header {
     font-family: $font-logo;
     font-size: 26px;
     color: $color-one;
-    text-align: left;
   }
 }
 
@@ -105,6 +116,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  z-index: 1;
   }
   
 .page-title {
@@ -145,9 +157,36 @@ header {
   .portfolio-description {
     background-color: $color-light;
   }
-  .box-title{
+  .box-title {
     margin: 0;
   }
 }
 
 /* Footer */
+
+footer ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0;
+}
+
+footer li {
+  font-size: 0;
+  display: inline-block;
+  margin: 0 10px;
+  i {
+  font-size: 30px;
+  background: $color-text;
+  width: 60px;
+  height: 60px;
+  color: $color-light;
+  border-radius: 50%;
+  }
+}
+
+.fab {
+  text-align: center;
+  line-height: 60px;
+      }
+      

@@ -70,6 +70,19 @@ header {
   background-attachment: fixed;
 }
 
+/*
+.splash::after {
+  position: absolute;
+  content: '';
+  background: $color-text;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+*/
 .navigation {
   padding: 20px 0;
 }
@@ -87,7 +100,6 @@ header {
   font-family: "Mansalva", cursive;
   font-size: 26px;
   color: #fed136;
-  text-align: left;
 }
 
 .splash-inner {
@@ -96,6 +108,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .page-title {
@@ -142,4 +155,33 @@ header {
 }
 
 /* Footer */
+footer ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 0;
+}
+
+footer li {
+  font-size: 0;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer li i {
+  font-size: 30px;
+  background: #2C3A47;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.fab {
+  text-align: center;
+  line-height: 60px;
+}
 /*# sourceMappingURL=style.css.map */
