@@ -1,14 +1,129 @@
+/* Variables */
 /* Global */
-/* Body */
-body {
-  font-family: 'Faustina', serif !important;
-  font-size: 18px;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-body h1, body h2, body h3, body h4, body h5 {
-  font-family: 'Playfair Display', serif !important;
+/* Body */
+body {
+  margin: 0;
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+section {
+  padding: 96px 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 20px auto;
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.section-subtitle {
+  font-family: "PT Serif", serif;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.box-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+button {
+  background-color: #fed136;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  margin: 32px 0;
 }
 
 /* Header */
+header {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.splash {
+  height: 700px;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navigation {
+  padding: 20px 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation a:hover {
+  color: #fed136;
+}
+
+.navigation span {
+  font-family: "Mansalva", cursive;
+  font-size: 26px;
+  color: #fed136;
+  text-align: left;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  font-size: 76px;
+}
+
+.page-subtitle {
+  font-family: "PT Serif", serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Services */
+.services i {
+  font-size: 50px;
+  color: #fed136;
+  border: solid 6px #fed136;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 85px;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #f7f7f7;
+}
+
 /* Footer */
 /*# sourceMappingURL=style.css.map */
